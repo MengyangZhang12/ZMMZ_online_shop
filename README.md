@@ -1,4 +1,4 @@
-# INFO6250 Final Project 
+# Final Project 
 By Mengyang Zhang
 ## Topic
 An online shop store for designed crystal products (Brand name: ZMMZ)
