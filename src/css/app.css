@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    font-family: "sans-serif";
+}
+
+.header-logo {
+    text-align:center;
+    background-color: white;
+}
+
+.logo {
+    width: 14rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+
+    font-size: 1.4rem;
+    color:rgb(22,41,80);
+
+    background-color: rgb(199,212,216);
+}
+
+.status {
+    padding: 1rem;
+    margin: 0 auto;
+
+    background-color:rgb(238,238,238);
+    color:purple;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login__waiting .data-waiting {
+    padding: 0.5rem;
+    background-color: rgb(238,238,238);
+}
+
+.homepage {
+    padding: 1rem 3rem;
+    margin: 0;
+
+    color: rgb(10,31,64);
+    background-color: rgb(238,238,238);
+}
+
+.homepage button {
+    font-style: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0.5rem 1rem;
+    background-color:rgb(199,212,216);
+}
+
+.title-buttons button {
+    height: 1.5rem;   
+    background-color:teal;
+
+    color: whitesmoke;
+    font-weight: 600;
+
+    border: 0;
+    border-radius: 0.2rem;
+}
+
+.menubar > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+
+    background-color: rgb(208,196,202);
+}
+
+.menubar button {
+    padding: 0.5rem;
+  
+    font: inherit;
+    font-size: 110%;
+    font-weight: 700;
+    color: rgb(90,52,111);
+    
+    background-color: transparent;
+    border: none;
+}
+
+.menubar button:hover, 
+.menubar button:focus-within {
+    text-decoration: underline;   
+}
+
+.submenu {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+
+    height: auto;
+    max-height: 0;
+    width: 10vw;
+    min-width: 7rem;
+
+    padding: 0.5rem 0;
+    margin: 0;
+       
+    background-color: rgb(217,209,219);
+    list-style-type: none;
+
+    transition: max-height 1s ease;
+}
+
+.menubar > ul > li:hover .submenu,
+.menubar > ul > li:focus-within .submenu {
+    display: block;
+    visibility: visible;
+    max-height: 100vh;   
+}
+
+.submenu li {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    font-size: 90%;   
+    color: #565656;   
+}
+
+.submenu li:hover, .submenu li:focus-within {
+    font-weight: 600;
+    color: rgb(22,41,80); 
+    background-color: rgb(199,212,216);   
+} 
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.product {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    list-style: none;
+    font-weight: 800;
+    color: cadetblue;
+}
+
+.product span {
+    padding: 0.25rem;
+    font-size: 500;
+    font-weight: 500;
+}
+
+.product-img {
+    width: 12rem;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.product-name {
+    font-size: 700;
+    font-weight: 700;
+    color:palevioletred;
+}
+
+.product-cart {
+    font-weight: 700;
+    color: white;
+    background-color: teal;
+}
+
+.cart {
+    display: flex;
+    margin: 1rem 3rem;
+    padding: 0.5rem 0;
+}
+
+.cart-items {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    list-style: none;
+    border: 1.5px solid orange;
+    color: rgb(90,52,111);
+    font-weight: 800;
+}
+
+.cart-img {
+    width: 3rem;
+}
+
+.cart-item button {
+    background-color: orange;
+}
+
+.cart-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.total {
+    align-self: end;
+    margin: 0 3rem;
+    padding: 0.5rem;
+
+    color:brown;
+    font-weight: 800;
+}
+
+.checkout {
+    align-self: end;
+    margin: 0 3rem;
+    padding: 0.5rem;
+    width: 12rem;
+
+    background-color:brown;
+    border: none;
+    
+    color: white;
+    font-weight: 800;
+}
+
+.content-account h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgb(93, 93, 116); 
+}
+
+.orders { 
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    color: rgb(90,52,111);
+    list-style-type: none;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+
+    list-style-type: none;
+    border: 1.5px solid rgb(208,196,202);
+}
+
+.order-id {
+    font-size: 0.8rem;
+    color: silver;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+.order-total {
+    align-self: end;
+    font-weight: 700;
+}
+
+.order button {
+    align-self: end;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+
+    background-color:rgb(208,196,202);
+    border: none;
+    
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+footer {
+    padding: 0.5rem 2rem;  
+    font-size: 80%;
+    color: #565656;
+    background-color: rgb(199,212,216);
+}
+
+footer p {
+    margin: 0;
+    padding: 0.2rem 1rem;
+}
+
+
+
+
+
